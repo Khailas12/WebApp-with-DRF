@@ -29,7 +29,12 @@ INSTALLED_APPS = [
     'authentication_app',
     
     'rest_framework',
+    'phonenumber_field',
 ]
+
+
+AUTH_USER_MODEL = 'authentication_app.User'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
