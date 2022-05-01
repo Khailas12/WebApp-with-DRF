@@ -35,6 +35,10 @@ INSTALLED_APPS = [
 
 AUTH_USER_MODEL = 'authentication_app.User'
 
+REST_FRAMEWORK = {      # error that show when the user exists
+    'NON_FIELD_ERRORS_KEY': 'errors'     
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -5,7 +5,7 @@ from phonenumber_field.serializerfields import PhoneNumberField
 
 class UserSerializer(serializers.ModelSerializer):
     username = serializers.CharField(max_length=25)
-    email = serializers.EmailField(max_length=20)
+    email = serializers.EmailField(max_length=50)
     phone_number = PhoneNumberField(allow_null=False, allow_blank=False)
     password = serializers.CharField(min_length=8)
     
